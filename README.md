@@ -1,6 +1,9 @@
 # narcissistic numbers
 
-This module exports a function that will test whether the given number matches the definition of a *narcissistic number*: each of its digits raised to the power of the number of digits, added together, equals the number. Some narcissistic numbers are 1, 153, and 1634.
+This module exports a function that will test whether the given number matches the definition of a *narcissistic number*: each of its digits raised to the power of the number of digits, added together, equals the number. Some narcissistic numbers are:
+* 1 (1<sup>1</sup> = 1)
+* 153 ( [1<sup>3</sup> = 1] + [5<sup>3</sup> = 125] + [3<sup>3</sup> = 27] )
+* 1634 ( [1<sup>4</sup> = 1] + [6<sup>4</sup> = 1296] + [3<sup>4</sup> = 81] + [4<sup>4</sup> = 256] )
 
 ```javascript
 testNarcNumber(n) -> boolean
