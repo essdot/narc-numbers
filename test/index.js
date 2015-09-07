@@ -34,8 +34,8 @@ test('generator takes argument', t => {
   t.equal(gen.next().value, 0)
   t.equal(gen.next(2).value, 2)
   t.equal(gen.next(3).value, 3)
-  t.equal(gen.next(150).value, 153)
   t.equal(gen.next(370).value, 370)
+  t.equal(gen.next(150).value, 153)
   t.equal(gen.next(371).value, 371)
   t.equal(gen.next().value, 407)
 

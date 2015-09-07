@@ -4,8 +4,7 @@ module.exports.searchGenerator = searchGenerator
 function testNarcNumber (_n) {
   const n = sanitize(_n)
   const digits = getDigits(n)
-  const digitsToPower = digits.map(digit => Math.pow(digit, digits.length))
-  const digitsSum = digitsToPower.reduce((a, b) => a + b, 0)
+  const digitsSum = raiseToLength(digits).reduce((a, b) => a + b, 0)
 
   return isFinite(n) && isFinite(digitsSum) && digitsSum === n
 }
@@ -30,6 +29,10 @@ function * searchGenerator (arg) {
 
 function getDigits (n) {
   return n.toFixed(0).split('').map(Number)
+}
+
+function raiseToLength (arr) {
+  return arr.map(el => Math.pow(el, arr.length))
 }
 
 function sanitize (n) {
