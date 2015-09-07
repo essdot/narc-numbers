@@ -8,7 +8,11 @@ This module exports a function that will test whether the given number matches t
 ```javascript
 testNarcNumber(n) -> boolean
 ```
+
 ====
+
+## generator
+
 This module also exports a [generator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator) that you can use to search for narcissistic numbers.
 
 ```javascript
