@@ -1,14 +1,14 @@
 {
   "name": "narc-numbers",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "narcissistic numbers",
+  "main": "lib/index.js",
   "scripts": {
     "test": "babel-node test/index.js",
     "build": "babel src --out-dir lib"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "essdot <justinsippel@gmail.com>",
+  "license": "MIT",
   "dependencies": {
   },
   "devDependencies": {
