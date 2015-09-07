@@ -9,7 +9,6 @@ This module exports a function that will test whether the given number matches t
 testNarcNumber(n) -> boolean
 ```
 
-====
 
 ## generator
 
